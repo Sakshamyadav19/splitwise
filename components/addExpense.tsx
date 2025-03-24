@@ -73,7 +73,7 @@ const AddExpense: React.FC<AddExpenseProps> = ({ visible, onClose, onExpenseAdde
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://10.0.0.173:5001/add-expense', {
+      const response = await fetch('https://expensebe.onrender.com/add-expense', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

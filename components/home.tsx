@@ -24,7 +24,7 @@ const HomeScreen: React.FC = () => {
     try {
       if (!user) return;
       const email = user?.emailAddresses[0]?.emailAddress;
-      const response = await fetch(`http://10.0.0.173:5001/get-expenses?email=${email}`);
+      const response = await fetch(`https://expensebe.onrender.com/get-expenses?email=${email}`);
       const data = await response.json();
       setExpenses(data.map((item: ExpenseType, index: number) => ({ 
         ...item, 

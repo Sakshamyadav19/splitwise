@@ -6,7 +6,7 @@ import Home from '@/components/home';
 import { useNavigation, useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const BACKEND_URL = 'http://10.0.0.173:5001'; // Replace with your actual backend URL
+const BACKEND_URL = 'https://expensebe.onrender.com'; // Replace with your actual backend URL
 
 export default function Page() {
   const navigation = useNavigation();

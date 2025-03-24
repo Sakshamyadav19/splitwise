@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { View, Text, TouchableOpacity, Animated, StyleSheet, Alert, Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const BACKEND_URL = 'http://10.0.0.173:5001';
+const BACKEND_URL = 'https://expensebe.onrender.com';
 
 interface MenuDrawerProps {
   visible: boolean;
